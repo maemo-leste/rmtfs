@@ -2,7 +2,7 @@ Source: rmtfs
 Section: pocophone
 Priority: optional
 Maintainer: Ivan J. <parazyd@dyne.org>
-Build-Depends: debhelper-compat (= 12), libqrtr-dev
+Build-Depends: debhelper-compat (= 12), libqrtr-dev, libeudev-dev
 Standards-Version: 4.3.0
 Homepage: https://github.com/andersson/rmtfs
 Vcs-Git: https://github.com/maemo-leste/rmtfs
