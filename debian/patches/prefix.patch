@@ -1,0 +1,26 @@
+diff --git a/Makefile b/Makefile
+index 54ae35f..95969aa 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@ OUT := rmtfs
+ 
+ CFLAGS += -Wall -g -O2
+ LDFLAGS += -lqrtr -ludev -lpthread
+-prefix = /usr/local
++prefix = /usr
+ bindir := $(prefix)/bin
+ servicedir := $(prefix)/lib/systemd/system
+ 
+diff --git a/qmi_rmtfs.h b/qmi_rmtfs.h
+index 03cbc8f..f282d7f 100644
+--- a/qmi_rmtfs.h
++++ b/qmi_rmtfs.h
+@@ -4,7 +4,7 @@
+ #include <stdint.h>
+ #include <stdbool.h>
+ 
+-#include "libqrtr.h"
++#include <libqrtr.h>
+ 
+ #define QMI_RMTFS_RESULT_SUCCESS 0
+ #define QMI_RMTFS_RESULT_FAILURE 1

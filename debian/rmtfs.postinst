@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#DEBHELPER#
+
+rc-update del rmtfs default || true
+rc-update add rmtfs sysinit || true
+
+exit 0
